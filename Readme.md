@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Андрей Бабич](https://up.htmlacademy.ru/htmlcss/25/user/923335).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Корякин] (https://htmlacademy.ru/profile/alexeycorr).
 
 ---
 
