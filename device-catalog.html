@@ -17,14 +17,14 @@
           <li class="user-link"><a href="#">Валентин Петухов</a></li>
           <li class="logout-link"><a href="#">Выйти</a></li>
         </ul>
-        <div class="compare-link"><a href="#">Сравнить</a></div>
-        <div class="cart-link"><a href="#">Корзина</a></div>
+        <a class="compare-link" href="#">Сравнить</a>
+        <a class="cart-link" href="#">Корзина</a>
       </div>
       <ul class="site-navigation">
-        <li><a href="device-catalog.html">Каталог товаров</a>
+        <li><a href="#">Каталог товаров</a>
           <ul class="catalog-navigation">
             <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="device-catalog.html">Моноподы для селфи</a></li>
             <li><a href="#">Экшн-камеры</a></li>
             <li><a href="#">Фитнес-браслеты</a></li>
             <li><a href="#">Умные часы</a></li>
@@ -35,13 +35,6 @@
         <li><a href="#">Гарантия</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <div class="header-button">
-        <ul class="user-navigation">
-          <li class="login-link"><a href="#">Войти</a></li>
-        </ul>
-        <div class="compare-link"><a href="#">Сравнить</a></div>
-        <div class="cart-link"><a href="#">Корзина</a></div>
-      </div>
     </nav>
   </header>
   <main class="container">
@@ -53,9 +46,18 @@
     </ul>
     <sections class="filtres">
       <h2 class="filtres-title">Фильтр:</h2>
-      <form class="filtres-color"></form>
-      <form class="filtres-bluetooth"></form>
-      <span class="button">Показать</span>
+      <form action="" method="get">
+        <fieldset>
+          <legend>Стоимость</legend>
+        </fieldset>
+        <fieldset>
+          <legend>Цвет</legend>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
     </sections>
     <section class="catalog">
       <h2 class="visualy-hidden">Каталог селфи-палок</h2>
@@ -67,32 +69,41 @@
               <img src="img/product-1.html" widht="360" height="380" alt="Любительская селфи-палка">
             </a>
           </p>
+          <h3>Любительская селфи-палка</h3>
+          <span class=catalog-item-price>500р.</span>
         </li>
         <li class="catalog-item">
-          <h3>Профессиональная селфи-палка</h3>
           <p class="catalog-item-image">
             <a href="catalog-item.html">
               <img src="img/product-2.html" widht="360" height="380" alt="Профессиональная селфи-палка">
             </a>
           </p>
+          <h3>Профессиональная селфи-палка</h3>
+          <span class=catalog-item-price>1500р.</span>
         </li>
         <li class="catalog-item">
-          <h3>Непотопляемая селфи-палка</h3>
           <p class="catalog-item-image">
             <a href="catalog-item.html">
               <img src="img/product-3.html" widht="360" height="380" alt="Непотопляемая селфи-палка">
             </a>
           </p>
+          <h3>Непотопляемая селфи-палка</h3>
+          <span class=catalog-item-price>2500р.</span>
         </li>
         <li class="catalog-item">
-          <h3>Селфи-палка «Следуй за мной»</h3>
           <p class="catalog-item-image">
             <a href="catalog-item.html">
               <img src="img/product-4.html" widht="360" height="380" alt="Селфи-палка «Следуй за мной»">
             </a>
           </p>
+          <h3>Селфи-палка «Следуй за мной»</h3>
+          <span class=catalog-item-price>2500р.</span>
         </li>
       </ul>
+      <div class="catalog-item-hover">
+        <button class="add-cart" type="button">В корзину</button>
+        <button class="add-compare" type="button">Добавить к сравнению</button>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
@@ -104,8 +115,8 @@
         <li class="user-link"><a href="#">Валентин Петухов</a></li>
         <li class="logout-link"><a href="#">Выйти</a></li>
       </ul>
-      <div class="compare-link"><a href="#">Сравнить</a></div>
-      <div class="cart-link"><a href="#">Корзина</a></div>
+      <a class="compare-link" href="#">Сравнить</a>
+      <a class="cart-link" href="#">Корзина</a>
     </div>
     <span class="footer-contacts adress">г. Москва, ул. Строителей, 15</span>
     <ul class="footer-navigation">
@@ -113,7 +124,7 @@
       <li><a href="#">Гарантия</a></li>
       <li><a href="#">Контакты</a></li>
     </ul>
-    <span class="footer-contacts phone"><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></span>
+    <a class="footer-contacts phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
     <div class="footer-social">
       <ul>
         <li><a class="social-button" href="#">Фейсбук</a></li>
